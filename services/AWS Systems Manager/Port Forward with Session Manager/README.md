@@ -8,7 +8,7 @@ The solution also authenticates through IAM which means no SSH key management, a
 Once everything is setup, the SSMPortForward.sh script can be run from a local machine. Once the name of the instance is entered, the script will handle the rest.
 Any port can be tunneled, including 3389(RDP) or 80(Web).
 
-This feature can even be used on machines not connected to the internet using the [PrivateLink Endpoints](https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-create-vpc.html)
+This feature can even be used on machines not connected to the internet using the [PrivateLink Endpoints](https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-create-vpc.html).
 
 ## Prerequisites on local machine
 - Bash/similar shell - Included on Linux/MacOS, Windows users can use [GitBash](https://git-scm.com/download/win).
