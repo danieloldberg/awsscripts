@@ -1,6 +1,8 @@
 # Port Forward with Session Manager
 Replacing those pesky bastion hosts / Remote Desktop Gateways!
 
+![PortForwardSSM](/images/PortForwardSSM.gif)
+
 Traffic can be tunneled with SSM Session Manager service to securely connect and access EC2 infrastructure on AWS.
 This requires barely no setup, no extra infrastructure to manage, and at no cost.
 The solution also authenticates through IAM which means no SSH key management, and full audit trail through CloudTrail.
