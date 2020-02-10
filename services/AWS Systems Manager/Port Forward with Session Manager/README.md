@@ -1,4 +1,5 @@
 # Port Forward with Session Manager
+Replacing those pesky bastion hosts / Remote desktop gateways!
 
 ## Prerequisites on local machine
 - [jq](https://stedolan.github.io/jq/download/)
