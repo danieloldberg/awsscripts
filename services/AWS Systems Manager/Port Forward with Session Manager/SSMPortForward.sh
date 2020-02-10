@@ -25,7 +25,7 @@ export AWS_ACCESS_KEY_ID=$(echo $temp_role | jq -r .Credentials.AccessKeyId)
 export AWS_SECRET_ACCESS_KEY=$(echo $temp_role | jq -r .Credentials.SecretAccessKey)
 export AWS_SESSION_TOKEN=$(echo $temp_role | jq -r .Credentials.SessionToken)
 
-instance_id=$(aws ec2 describe-instances \
+instance_id=$(aws ec2 --region $AWS_REGION describe-instances \
     --filters "Name=tag:Name,Values=$INSTANCE_NAME" \
     --query "Reservations[*].Instances[*].[InstanceId]" --output text)
 
